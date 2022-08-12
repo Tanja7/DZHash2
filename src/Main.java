@@ -15,5 +15,10 @@ public class Main {
         System.out.println("Введите слово для поиска");
         String word = scanner.nextLine();
         text.hasWord (word);
+        if (text.hasWord(word)) {
+            System.out.println("Искомое слово " + word + " в тексте есть");
+        } else {
+            System.out.println("Искомого слова " + word + " в тексте нет");
+        }
     }
 }

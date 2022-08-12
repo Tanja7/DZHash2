@@ -20,13 +20,6 @@ public class WordsChecker {
 
     // метод проверки наличия слова в тексте
     public boolean hasWord(String word) {
-
-        if (set.contains(word)) {
-            System.out.println("Искомое слово " + word + " в тексте есть");
-            return true;
-        } else {
-            System.out.println("Искомого слова " + word + " в тексте нет");
-            return false;
-        }
+        return set.contains(word);
     }
 }
